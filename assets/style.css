@@ -86,7 +86,6 @@ header nav ul li a:hover{
   header nav ul{
     color: white;
     list-style-type: circle;
-    margin-top: 3vw;
   }
   header nav ul li{
     padding-top: .5vw;
@@ -94,7 +93,6 @@ header nav ul li a:hover{
     display: block;
     margin-right: 1vw;
     font-size: 3vw;
-    line-height: 3vw;
   }
 }
 
@@ -168,7 +166,6 @@ header nav ul li a:hover{
   #aboutMe p{
     font-size: 2vw;
     padding: 0 1vw;
-    
   }
 }
 
