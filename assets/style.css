@@ -4,6 +4,8 @@
   --blue: rgb(41, 79, 109);
   --lightBlue: rgb(73, 109, 137);
   --lightestBlue: rgb(113, 142, 164);
+  --titleBox: rgba(190, 214, 233, 1);
+
 }
 
 *{
@@ -130,8 +132,9 @@ header nav ul li a:hover{
 }
 
 #aboutMe h1{
+  width: 6rem;
   padding-top: 7rem;
-  padding-left: 3rem;
+  padding-left: 2rem;
   font-family: ubuntu, sans-serif;
   color: var(--darkBlue);
   font-size: 2rem;
@@ -174,4 +177,66 @@ header nav ul li a:hover{
     font-size: 1.8vw;
     padding-left: 1vw;
   }
+}
+
+main{
+  margin-top: 2rem;
+}
+
+main h1{
+  width:7rem;
+  padding-top: 7rem;
+  padding-left: .7rem;
+  font-family: ubuntu, sans-serif;
+  color: var(--darkBlue);
+  font-size: 2rem;
+  padding-right: 1rem;
+  border-right: .2rem var(--darkestBlue) solid;
+}
+
+#projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 9rem;
+  border: .2rem black solid;
+  margin-top: -9rem;
+}
+
+#projects section{
+  border: .2rem var(--blue) solid;
+  overflow: hidden;
+}
+
+#projects section a img{
+  transition: all .5s;
+}
+
+#projects section:hover a img{
+  transform: scale(1.2);
+}
+.projectTitle{
+  height: 4rem;
+  width: 10rem;
+  background-color: var(--titleBox);
+  text-align: center;
+  position: absolute;
+  border: .3rem var(--blue) solid;
+  border-left: none;
+  z-index: 1; /** bring to front**/
+}
+
+#ttlFanPage{
+  margin-top: 35rem;
+}
+
+
+
+#imgFanPage{
+  width: 80vw;
+  margin-bottom: -.3rem;
+}
+
+#imgRefactor{
+  width: 40vw;
 }
