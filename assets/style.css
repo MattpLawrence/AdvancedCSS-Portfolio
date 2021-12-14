@@ -273,10 +273,15 @@ img{
     padding-left: 3vw;
   }
 
+  #projects section{
+    border: .6vw var(--blue) solid;
+  }
+
   .projectTitle{
     height: 6vw;
     width: 20vw;
     margin-top: 10vw;
+    border: .6vw var(--blue) solid;
   }
 
   h2{
