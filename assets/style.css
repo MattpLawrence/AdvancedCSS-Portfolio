@@ -11,7 +11,7 @@
 *{
   margin: 0;
 }
-
+/* *******************************Header****************** */
 header{
   height: 4rem;
   background-color: var(--darkestBlue);
@@ -25,7 +25,7 @@ header h1{
   font-size: 3rem;
   padding-left: 5rem;
 }
-
+/* *******************************Header Nav****************** */
 header nav{
   display: inline;
   float: right;
@@ -94,11 +94,11 @@ header nav ul li a:hover{
     padding-right: 4vw;
     display: block;
     margin-right: 1vw;
-    font-size: 3vw;
+    font-size: 2.8vw;
   }
 }
 
-
+/* *******************************Nav Bar****************** */
 .navBar{
   font-family: ubuntu, sans-serif;
   font-size: 1.3rem;
@@ -126,6 +126,7 @@ header nav ul li a:hover{
   }
 }
 
+/* *******************************About me****************** */
 #aboutMe{
   display: flex;
   margin-top: 2rem;
@@ -178,7 +179,7 @@ header nav ul li a:hover{
     padding-left: 1vw;
   }
 }
-
+/* *******************************Main****************** */
 main{
   margin-top: 2rem;
 }
@@ -190,22 +191,22 @@ main h1{
   font-family: ubuntu, sans-serif;
   color: var(--darkBlue);
   font-size: 2rem;
-  padding-right: 1rem;
-  border-right: .2rem var(--darkestBlue) solid;
+  margin-right: -1rem;
 }
-
+/* *******************************Projects****************** */
 #projects{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 9rem;
-  border: .2rem black solid;
+  margin-left: 8.6rem;
+  border-left: .2rem var(--darkestBlue) solid;
   margin-top: -9rem;
 }
 
 #projects section{
   border: .2rem var(--blue) solid;
   overflow: hidden;
+  margin: 1vw;
 }
 
 #projects section a img{
@@ -215,6 +216,7 @@ main h1{
 #projects section:hover a img{
   transform: scale(1.2);
 }
+/* *******************************Title Block****************** */
 .projectTitle{
   height: 4rem;
   width: 10rem;
@@ -224,19 +226,63 @@ main h1{
   border: .3rem var(--blue) solid;
   border-left: none;
   z-index: 1; /** bring to front**/
+  margin-top: 14vw;
 }
 
 #ttlFanPage{
-  margin-top: 35rem;
+  margin-top: 40vw;
 }
-
-
-
+/* *******************************Project Images****************** */
 #imgFanPage{
   width: 80vw;
-  margin-bottom: -.3rem;
 }
 
-#imgRefactor{
-  width: 40vw;
+img{
+  width: 39vw;
+  margin-bottom: -.3rem;
+}
+@media screen and (max-width: 850px) {
+  
+  img{
+    width: 34vw;
+    margin-bottom: -.3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+
+  main{
+    display: flex;
+  }
+
+  main h1{
+    padding-top: 10vw;
+    padding-left: 0vw;
+    padding-right: 0vw; 
+    text-align: center;
+    width: 22vw;
+    font-size: 2.8vw;
+    border-right: .2rem black solid;
+  }
+
+  #projects{
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left: none;
+    margin-top: 1vw;
+    margin-left: 0vw;
+    padding-left: 3vw;
+  }
+
+  .projectTitle{
+    height: 6vw;
+    width: 20vw;
+    margin-top: 10vw;
+  }
+
+  h2{
+    font-size: 3vw;
+  }
+  h4{
+    font-size: 2vw;
+  }
 }
