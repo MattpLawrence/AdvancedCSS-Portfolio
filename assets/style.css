@@ -59,11 +59,7 @@ header nav ul li a:hover{
   margin-left: -10em;
   margin-top: 2.6rem;
 }
-
-#navBar{
-  display: inline;
-}
-
+/* write a fade in animation for the tooltip */
 @keyframes fadeIn{
   from {
     opacity: 0;
@@ -90,13 +86,95 @@ header nav ul li a:hover{
   header nav ul{
     color: white;
     list-style-type: circle;
+    margin-top: 3vw;
   }
   header nav ul li{
-    padding-top: 0.5vw;
+    padding-top: .5vw;
     padding-right: 4vw;
     display: block;
     margin-right: 1vw;
     font-size: 3vw;
+    line-height: 3vw;
   }
 }
 
+
+.navBar{
+  font-family: ubuntu, sans-serif;
+  font-size: 1.3rem;
+}
+
+.navBar ul{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--blue);
+  line-height: 2rem;
+  list-style-type: none;
+}
+/* .navBar ul li a does not work here */
+.navBar ul li a{
+  color: white;
+  text-decoration: none;
+}
+.navBar ul li a:hover{
+  color: var(--lightestBlue);
+}
+
+@media screen  and (max-width: 800px) {
+  .navBar{
+    font-size: 3vw;
+  }
+}
+
+#aboutMe{
+  display: flex;
+  margin-top: 2rem;
+}
+
+#aboutMe h1{
+  padding-top: 7rem;
+  padding-left: 3rem;
+  font-family: ubuntu, sans-serif;
+  color: var(--darkBlue);
+  font-size: 2rem;
+  padding-right: 1rem;
+  border-right: .2rem var(--darkestBlue) solid;
+}
+
+#aboutMe img{
+  width: 20rem;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+#aboutMe p{
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  #aboutMe h1{
+    padding-top: 7vw;
+    padding-left: 3vw;
+    font-size: 3vw;
+    padding-right: 1vw;
+    border-right: .2rem var(--darkestBlue) solid;
+  }
+  #aboutMe img{
+    width: 30vw;
+    padding: 1vw;
+    border-radius:4vw;
+  }
+  #aboutMe p{
+    font-size: 2vw;
+    padding: 0 1vw;
+    
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width:800px) {
+  #aboutMe p{
+    font-size: 1.8vw;
+    padding-left: 1vw;
+  }
+}
