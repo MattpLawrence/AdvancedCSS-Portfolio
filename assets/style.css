@@ -1,0 +1,102 @@
+:root{
+  --darkestBlue: rgb(4, 32, 55);
+  --darkBlue: rgb(18, 54, 82);
+  --blue: rgb(41, 79, 109);
+  --lightBlue: rgb(73, 109, 137);
+  --lightestBlue: rgb(113, 142, 164);
+}
+
+*{
+  margin: 0;
+}
+
+header{
+  height: 4rem;
+  background-color: var(--darkestBlue);
+  padding: 1rem;
+  font-family: ubuntu, sans-serif;
+  color: white;
+}
+
+header h1{
+  display: inline-block;
+  font-size: 3rem;
+  padding-left: 5rem;
+}
+
+header nav{
+  display: inline;
+  float: right;
+  padding-top: 1rem;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+header nav ul li{
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 2rem;
+}
+
+header nav ul li a{
+  color: white;
+  transition: .3s;
+}
+
+header nav ul li a:hover{
+  color: var(--lightestBlue);
+  font-size: 2.5rem;
+}
+
+#email:hover::Before{
+  content: "MattPLawrence@gmail.com";
+  font-size: 1rem;
+  position: absolute;
+  background-color: var(--lightestBlue);
+  color: var(--darkestBlue);
+  animation: 3s fadeIn;
+  margin-left: -10em;
+  margin-top: 2.6rem;
+}
+
+#navBar{
+  display: inline;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 800px) { 
+  header{
+    padding: 0;
+    height: 14vw;
+  }
+  header h1{
+    line-height: 14vw;
+    font-size: 6vw;
+    padding-left: 5vw;
+  }
+  header nav{
+    padding-top: 0;
+    line-height: 4vw;
+  }
+  header nav ul{
+    color: white;
+    list-style-type: circle;
+  }
+  header nav ul li{
+    padding-top: 0.5vw;
+    padding-right: 4vw;
+    display: block;
+    margin-right: 1vw;
+    font-size: 3vw;
+  }
+}
+
