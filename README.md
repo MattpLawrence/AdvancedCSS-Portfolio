@@ -22,4 +22,4 @@ I learned that there are a lot oof different ways to accomplish the same thing. 
 ## Preview:
 The website landing page as written in this repository should look like the following image:
 
-![Alt text](Assets/pictures/final-screenshot.png)
+![Screen shot](Assets/pictures/final-screenshot.png)
